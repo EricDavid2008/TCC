@@ -30,7 +30,7 @@
   </h1>
   <p class="hero-sub">Como a programação está transformando a perícia criminal na era digital.</p>
     <div class="hero-ctas">
-    <a href="#crimes" class="btn btn-primary">Explorar conteúdo ↓</a>
+    <a href="#crimes" class="btn btn-primary">Explorar conteúdo </a>
     <a href="#simulador" class="btn btn-outline">Simulador</a>
   </div>
 
@@ -43,28 +43,24 @@
 
  <div class="crimes-grid reveal" id="crimes-grid">
 
-      <div class="crime-card" data-crime="phishing">
-        <span class="crime-icon">🎣</span>
+      <div class="crime-card" data-crime="Phishing">
         <div class="crime-name">Phishing</div>
         <div class="crime-summary">Engenharia social para roubo de credenciais</div>
        </div>
 
-      <div class="crime-card" data-crime="ransomware">
-        <span class="crime-icon">🔒</span>
+      <div class="crime-card" data-crime="Ransomware">
 <div class="crime-name">Ransomware</div>
         <div class="crime-summary">Sequestro e criptografia de dados</div>
       </div>
 
-      <div class="crime-card" data-crime="injection">
-        <span class="crime-icon">💉</span>
-        <div class="crime-name">SQL Injection</div>
-        <div class="crime-summary">Manipulação de banco de dados via input</div>
+      <div class="crime-card" data-crime="Malware">
+        <div class="crime-name">Malware</div>
+        <div class="crime-summary">Manipulação de sistema de dispositivos. </div>
       </div>
 
-      <div class="crime-card" data-crime="mitm">
-        <span class="crime-icon">🕵️</span>
-        <div class="crime-name">Man-in-the-Middle</div>
-        <div class="crime-summary">Interceptação de comunicações</div>
+      <div class="crime-card" data-crime="cyberbullying">
+        <div class="crime-name">Cyberbullying</div>
+        <div class="crime-summary"> Bullying no ambiente digital. </div>
       </div>
 <div class="crime-detail" id="crime-detail">
       </div>
@@ -72,6 +68,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- SIMULADOR -->
 <section id="simulador">
@@ -100,116 +97,42 @@
   </div>
 </section>
      
-<!-- FERRAMENTAS -->
-<section id="ferramentas" style="background:var(--surface);">
+<!<!-- FERRAMENTAS -->
+<section id="ferramentas" style="background;">
   <div class="section-inner">
     <p class="section-eyebrow reveal">Programação aplicada</p>
-    <h2 class="section-title reveal">Ferramentas que todo usuário pode usar</h2>
-    <p class="section-desc reveal">Scripts simples em Python que qualquer pessoa pode rodar para se proteger. Sem experiência avançada necessária.</p>
-    <div class="tools-grid">
+    <h2 class="section-title reveal">Ferramentas utilizadas por profissionais</h2>
+        <div class="tools-grid">
 
       <div class="tool-card reveal">
-        <div class="tool-header">
-          <div class="tool-icon">🔍</div>
-          <div>
-            <div class="tool-name">Verificador de URL suspeita</div>
-            <div class="tool-lang">Python 3 · requests · re</div>
-          </div>
-        </div>
-        <div class="tool-desc">Analisa links antes de clicar, verifica certificado SSL, domínio e padrões de phishing comuns.</div>
-        <div class="tool-code"><span class="kw">import</span> re, requests
+        <div class="tool-header"> ForensicToolKit Imager
+                 </div>
+        <div class="tool-desc"> Desenvolvido pela AccessData. É um programa importante no meio forense pois o software consegue recuperar arquivos excluídos, descriptografar senhas, criar imagens, investigar dados, além de criar imagens forenses e visualizar arquivos sem alterar o modelo original. (TSUKAHARA., 2023)
+</div>
+       
 
-<span class="cm"># Padrões comuns em URLs maliciosas</span>
-ALERTAS = [<span class="str">"login"</span>, <span class="str">"verify"</span>, <span class="str">"secure"</span>, <span class="str">"-account"</span>]
+<div class="tool-card reveal">
+        <div class="tool-header"> EnCase
+                 </div>
+        <div class="tool-desc">Criado pela OpenText (antiga Guidance Software), esse programa é crucial na hora da análise de registro do Windows e histórico da internet e documentos. Para trabalhos internos e discretos fora da rede, como investigações de assédio ou roubo de dados, é um software muito usado para dispositivos móveis. (ONDATA INTERNATIONAL, 2024) 
 
-<span class="kw">def</span> <span class="fn">verificar_url</span>(url):
-  pontos = <span class="num">0</span>
-  <span class="kw">if not</span> url.startswith(<span class="str">"https"</span>):
-    pontos += <span class="num">2</span>  <span class="cm"># sem SSL</span>
-  <span class="kw">for</span> p <span class="kw">in</span> ALERTAS:
-    <span class="kw">if</span> p <span class="kw">in</span> url.lower():
-      pontos += <span class="num">1</span>
-  <span class="kw">return</span> <span class="str">"⚠️ SUSPEITA"</span> <span class="kw">if</span> pontos > <span class="num">2</span> <span class="kw">else</span> <span class="str">"✅ OK"</span></div>
-      </div>
+</div>
+    
 
-      <div class="tool-card reveal">
-        <div class="tool-header">
-          <div class="tool-icon">🔐</div>
-          <div>
-            <div class="tool-name">Gerador de senhas seguras</div>
-            <div class="tool-lang">Python 3 · secrets · string</div>
-          </div>
-        </div>
-        <div class="tool-desc">Gera senhas criptograficamente seguras usando o módulo `secrets`, muito mais seguro que `random`.</div>
-        <div class="tool-code"><span class="kw">import</span> secrets, string
+<div class="tool-card reveal">
+        <div class="tool-header"> Autopsy Forensic Suite
+                 </div>
+        <div class="tool-desc"> Feito por Sleuth Kit Labs e Basis Technology, é um aplicativo com uma interface baseada em HTML, o programa facilita a investigação de discos rígidos e entender o que aconteceu em um computador, além de gerar relatórios detalhados. É possível ter uma análise cronológica das atividades e extrair históricos, favoritos, identificar itens da lixeira e detectar arquivos maliciosos conhecidos. (MENDES.,2020)
 
-<span class="kw">def</span> <span class="fn">gerar_senha</span>(tamanho=<span class="num">20</span>):
-  chars = (
-    string.ascii_letters +
-    string.digits +
-    <span class="str">"!@#$%^&*()"</span>
-  )
-  <span class="cm"># secrets é seguro para criptografia</span>
-  <span class="kw">return</span> <span class="str">""</span>.join(
-    secrets.<span class="fn">choice</span>(chars)
-    <span class="kw">for</span> _ <span class="kw">in</span> range(tamanho)
-  )
 
-senha = <span class="fn">gerar_senha</span>()
-<span class="fn">print</span>(senha)  <span class="cm"># ex: xK#9mP!vQz@2nRt...</span></div>
-      </div>
+</div>
 
-      <div class="tool-card reveal">
-        <div class="tool-header">
-          <div class="tool-icon">📁</div>
-          <div>
-            <div class="tool-name">Monitor de integridade de arquivos</div>
-            <div class="tool-lang">Python 3 · hashlib · os</div>
-          </div>
-        </div>
-        <div class="tool-desc">Técnica usada por peritos forenses — detecta alterações não autorizadas em arquivos importantes.</div>
-        <div class="tool-code"><span class="kw">import</span> hashlib, os, json
 
-<span class="kw">def</span> <span class="fn">hash_arquivo</span>(path):
-  h = hashlib.<span class="fn">sha256</span>()
-  <span class="kw">with</span> <span class="fn">open</span>(path, <span class="str">"rb"</span>) <span class="kw">as</span> f:
-    h.<span class="fn">update</span>(f.<span class="fn">read</span>())
-  <span class="kw">return</span> h.<span class="fn">hexdigest</span>()
 
-<span class="kw">def</span> <span class="fn">criar_baseline</span>(pasta):
-  hashes = {}
-  <span class="kw">for</span> nome <span class="kw">in</span> os.<span class="fn">listdir</span>(pasta):
-    path = os.path.<span class="fn">join</span>(pasta, nome)
-    hashes[nome] = <span class="fn">hash_arquivo</span>(path)
-  <span class="kw">return</span> hashes <span class="cm"># salvar e comparar depois</span></div>
-      </div>
-
-      <div class="tool-card reveal">
-        <div class="tool-header">
-          <div class="tool-icon">📧</div>
-          <div>
-            <div class="tool-name">Analisador de cabeçalho de e-mail</div>
-            <div class="tool-lang">Python 3 · email · re</div>
-          </div>
-        </div>
-        <div class="tool-desc">Extrai metadados do cabeçalho de e-mails para identificar origem real, rota e sinais de spoofing.</div>
-        <div class="tool-code"><span class="kw">import</span> email, re
-
-<span class="kw">def</span> <span class="fn">analisar_header</span>(raw_email):
-  msg = email.<span class="fn">message_from_string</span>(raw_email)
-  origem = msg[<span class="str">"From"</span>]
-  reply  = msg[<span class="str">"Reply-To"</span>]
-
-  <span class="cm"># Sinal de spoofing: Reply-To diferente</span>
-  <span class="kw">if</span> reply <span class="kw">and</span> reply != origem:
-    <span class="fn">print</span>(<span class="str">"⚠️ Possível spoofing!"</span>)
-    <span class="fn">print</span>(<span class="str">f"De: {origem}"</span>)
-    <span class="fn">print</span>(<span class="str">f"Resposta vai para: {reply}"</span>)
-  <span class="kw">return</span> msg[<span class="str">"Received"</span>]  <span class="cm"># rota do e-mail</span></div>
-      </div>
 
     </div>
   </div>
+
 </section>
 
 <!-- PROTEJA-SE -->
